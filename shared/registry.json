@@ -1,0 +1,2183 @@
+{
+  "version": 1,
+  "categories": [
+    {
+      "id": "image",
+      "name": "Image converter",
+      "short": "Images",
+      "icon": "image",
+      "description": "Convert, resize, rotate and compress PNG, JPEG, WebP, GIF, BMP, TIFF and ICO images."
+    },
+    {
+      "id": "document",
+      "name": "Document converter",
+      "short": "Documents",
+      "icon": "file-text",
+      "description": "Office documents to PDF, and text-document conversions between Markdown, HTML, DOCX, ODT and plain text."
+    },
+    {
+      "id": "pdf",
+      "name": "PDF tools",
+      "short": "PDF",
+      "icon": "file",
+      "description": "Merge PDFs, extract pages, turn images into PDF, extract text or render pages to PNG."
+    },
+    {
+      "id": "audio",
+      "name": "Audio converter",
+      "short": "Audio",
+      "icon": "music",
+      "description": "Convert between MP3, WAV, FLAC, OGG and M4A with FFmpeg."
+    },
+    {
+      "id": "video",
+      "name": "Video converter",
+      "short": "Video",
+      "icon": "video",
+      "description": "MP4, WebM, MKV and MOV conversion, video to GIF, and audio extraction."
+    },
+    {
+      "id": "archive",
+      "name": "Archive tools",
+      "short": "Archives",
+      "icon": "archive",
+      "description": "Create ZIP files in your browser, or re-pack ZIP and TAR.GZ archives safely."
+    },
+    {
+      "id": "data",
+      "name": "Data converter",
+      "short": "Data",
+      "icon": "braces",
+      "description": "Format, minify and validate JSON; convert CSV, JSON and XML; Base64 and URL encoding."
+    },
+    {
+      "id": "developer",
+      "name": "Developer tools",
+      "short": "Developer",
+      "icon": "terminal",
+      "description": "Base64 and URL encoding or decoding for text files."
+    }
+  ],
+  "formats": {
+    "png": {
+      "label": "PNG",
+      "mime": "image/png",
+      "extensions": [
+        "png"
+      ]
+    },
+    "jpeg": {
+      "label": "JPEG",
+      "mime": "image/jpeg",
+      "extensions": [
+        "jpg",
+        "jpeg",
+        "jpe"
+      ]
+    },
+    "webp": {
+      "label": "WebP",
+      "mime": "image/webp",
+      "extensions": [
+        "webp"
+      ]
+    },
+    "gif": {
+      "label": "GIF",
+      "mime": "image/gif",
+      "extensions": [
+        "gif"
+      ]
+    },
+    "bmp": {
+      "label": "BMP",
+      "mime": "image/bmp",
+      "extensions": [
+        "bmp"
+      ]
+    },
+    "tiff": {
+      "label": "TIFF",
+      "mime": "image/tiff",
+      "extensions": [
+        "tiff",
+        "tif"
+      ]
+    },
+    "ico": {
+      "label": "ICO",
+      "mime": "image/x-icon",
+      "extensions": [
+        "ico"
+      ]
+    },
+    "pdf": {
+      "label": "PDF",
+      "mime": "application/pdf",
+      "extensions": [
+        "pdf"
+      ]
+    },
+    "docx": {
+      "label": "DOCX",
+      "mime": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+      "extensions": [
+        "docx"
+      ]
+    },
+    "odt": {
+      "label": "ODT",
+      "mime": "application/vnd.oasis.opendocument.text",
+      "extensions": [
+        "odt"
+      ]
+    },
+    "rtf": {
+      "label": "RTF",
+      "mime": "application/rtf",
+      "extensions": [
+        "rtf"
+      ]
+    },
+    "xlsx": {
+      "label": "XLSX",
+      "mime": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+      "extensions": [
+        "xlsx"
+      ]
+    },
+    "ods": {
+      "label": "ODS",
+      "mime": "application/vnd.oasis.opendocument.spreadsheet",
+      "extensions": [
+        "ods"
+      ]
+    },
+    "pptx": {
+      "label": "PPTX",
+      "mime": "application/vnd.openxmlformats-officedocument.presentationml.presentation",
+      "extensions": [
+        "pptx"
+      ]
+    },
+    "odp": {
+      "label": "ODP",
+      "mime": "application/vnd.oasis.opendocument.presentation",
+      "extensions": [
+        "odp"
+      ]
+    },
+    "txt": {
+      "label": "TXT",
+      "mime": "text/plain",
+      "extensions": [
+        "txt",
+        "text"
+      ]
+    },
+    "md": {
+      "label": "Markdown",
+      "mime": "text/markdown",
+      "extensions": [
+        "md",
+        "markdown"
+      ]
+    },
+    "html": {
+      "label": "HTML",
+      "mime": "text/html",
+      "extensions": [
+        "html",
+        "htm"
+      ]
+    },
+    "json": {
+      "label": "JSON",
+      "mime": "application/json",
+      "extensions": [
+        "json"
+      ]
+    },
+    "csv": {
+      "label": "CSV",
+      "mime": "text/csv",
+      "extensions": [
+        "csv"
+      ]
+    },
+    "xml": {
+      "label": "XML",
+      "mime": "application/xml",
+      "extensions": [
+        "xml"
+      ]
+    },
+    "mp3": {
+      "label": "MP3",
+      "mime": "audio/mpeg",
+      "extensions": [
+        "mp3"
+      ]
+    },
+    "wav": {
+      "label": "WAV",
+      "mime": "audio/wav",
+      "extensions": [
+        "wav"
+      ]
+    },
+    "flac": {
+      "label": "FLAC",
+      "mime": "audio/flac",
+      "extensions": [
+        "flac"
+      ]
+    },
+    "ogg": {
+      "label": "OGG",
+      "mime": "audio/ogg",
+      "extensions": [
+        "ogg",
+        "oga"
+      ]
+    },
+    "m4a": {
+      "label": "M4A (AAC)",
+      "mime": "audio/mp4",
+      "extensions": [
+        "m4a",
+        "aac"
+      ]
+    },
+    "mp4": {
+      "label": "MP4",
+      "mime": "video/mp4",
+      "extensions": [
+        "mp4",
+        "m4v"
+      ]
+    },
+    "webm": {
+      "label": "WebM",
+      "mime": "video/webm",
+      "extensions": [
+        "webm"
+      ]
+    },
+    "mkv": {
+      "label": "MKV",
+      "mime": "video/x-matroska",
+      "extensions": [
+        "mkv"
+      ]
+    },
+    "mov": {
+      "label": "MOV",
+      "mime": "video/quicktime",
+      "extensions": [
+        "mov"
+      ]
+    },
+    "zip": {
+      "label": "ZIP",
+      "mime": "application/zip",
+      "extensions": [
+        "zip"
+      ]
+    },
+    "targz": {
+      "label": "TAR.GZ",
+      "mime": "application/gzip",
+      "extensions": [
+        "tar.gz",
+        "tgz"
+      ]
+    }
+  },
+  "optionDefs": {
+    "quality": {
+      "type": "range",
+      "label": "Quality",
+      "min": 1,
+      "max": 100,
+      "step": 1,
+      "default": 85,
+      "help": "Higher is larger and closer to the original."
+    },
+    "background": {
+      "type": "color",
+      "label": "Background",
+      "default": "#ffffff",
+      "help": "Fills transparent areas. JPEG cannot store transparency."
+    },
+    "maxWidth": {
+      "type": "number",
+      "label": "Max width (px)",
+      "min": 0,
+      "max": 16000,
+      "default": 0,
+      "help": "0 keeps the original width. Images are never enlarged."
+    },
+    "maxHeight": {
+      "type": "number",
+      "label": "Max height (px)",
+      "min": 0,
+      "max": 16000,
+      "default": 0,
+      "help": "0 keeps the original height. Images are never enlarged."
+    },
+    "rotate": {
+      "type": "select",
+      "label": "Rotate",
+      "default": "0",
+      "choices": [
+        {
+          "value": "0",
+          "label": "None"
+        },
+        {
+          "value": "90",
+          "label": "90° clockwise"
+        },
+        {
+          "value": "180",
+          "label": "180°"
+        },
+        {
+          "value": "270",
+          "label": "90° counter-clockwise"
+        }
+      ]
+    },
+    "grayscale": {
+      "type": "boolean",
+      "label": "Grayscale",
+      "default": false
+    },
+    "pages": {
+      "type": "text",
+      "label": "Pages",
+      "default": "1",
+      "placeholder": "e.g. 1-3,5,8-",
+      "help": "Comma-separated pages or ranges. Open ranges such as 8- run to the last page."
+    },
+    "indent": {
+      "type": "select",
+      "label": "Indentation",
+      "default": "2",
+      "choices": [
+        {
+          "value": "2",
+          "label": "2 spaces"
+        },
+        {
+          "value": "4",
+          "label": "4 spaces"
+        },
+        {
+          "value": "tab",
+          "label": "Tab"
+        }
+      ]
+    },
+    "delimiter": {
+      "type": "select",
+      "label": "CSV delimiter",
+      "default": "auto",
+      "choices": [
+        {
+          "value": "auto",
+          "label": "Auto-detect"
+        },
+        {
+          "value": ",",
+          "label": "Comma"
+        },
+        {
+          "value": ";",
+          "label": "Semicolon"
+        },
+        {
+          "value": "\t",
+          "label": "Tab"
+        },
+        {
+          "value": "|",
+          "label": "Pipe"
+        }
+      ]
+    },
+    "audioBitrate": {
+      "type": "select",
+      "label": "Bitrate",
+      "default": "192",
+      "choices": [
+        {
+          "value": "96",
+          "label": "96 kbps"
+        },
+        {
+          "value": "128",
+          "label": "128 kbps"
+        },
+        {
+          "value": "192",
+          "label": "192 kbps"
+        },
+        {
+          "value": "256",
+          "label": "256 kbps"
+        },
+        {
+          "value": "320",
+          "label": "320 kbps"
+        }
+      ]
+    },
+    "dpi": {
+      "type": "select",
+      "label": "Resolution",
+      "default": "150",
+      "choices": [
+        {
+          "value": "72",
+          "label": "72 DPI (small)"
+        },
+        {
+          "value": "150",
+          "label": "150 DPI"
+        },
+        {
+          "value": "200",
+          "label": "200 DPI"
+        }
+      ]
+    },
+    "gifWidth": {
+      "type": "select",
+      "label": "GIF width",
+      "default": "480",
+      "choices": [
+        {
+          "value": "320",
+          "label": "320 px"
+        },
+        {
+          "value": "480",
+          "label": "480 px"
+        },
+        {
+          "value": "640",
+          "label": "640 px"
+        }
+      ]
+    },
+    "gifFps": {
+      "type": "select",
+      "label": "Frames per second",
+      "default": "10",
+      "choices": [
+        {
+          "value": "5",
+          "label": "5 fps"
+        },
+        {
+          "value": "10",
+          "label": "10 fps"
+        },
+        {
+          "value": "15",
+          "label": "15 fps"
+        }
+      ]
+    },
+    "rotateAngle": {
+      "type": "select",
+      "label": "Rotate clockwise by",
+      "default": "90",
+      "choices": [
+        {
+          "value": "90",
+          "label": "90°"
+        },
+        {
+          "value": "180",
+          "label": "180°"
+        },
+        {
+          "value": "270",
+          "label": "270° (90° counter-clockwise)"
+        }
+      ]
+    },
+    "rotatePages": {
+      "type": "text",
+      "label": "Pages to rotate",
+      "default": "",
+      "placeholder": "All pages",
+      "help": "Leave blank to rotate every page, or list pages such as 1-3,5."
+    },
+    "splitMode": {
+      "type": "select",
+      "label": "Split",
+      "default": "each",
+      "choices": [
+        {
+          "value": "each",
+          "label": "Every page into its own PDF"
+        },
+        {
+          "value": "chunk",
+          "label": "Every N pages"
+        },
+        {
+          "value": "ranges",
+          "label": "Custom ranges"
+        }
+      ]
+    },
+    "splitChunk": {
+      "type": "number",
+      "label": "Pages per file (\"Every N pages\")",
+      "min": 1,
+      "max": 500,
+      "default": 2
+    },
+    "splitRanges": {
+      "type": "text",
+      "label": "Ranges (\"Custom ranges\")",
+      "default": "",
+      "placeholder": "e.g. 1-3;4-6;7-",
+      "help": "Separate files with a semicolon. Each file may list pages such as 1-3,5."
+    },
+    "wmText": {
+      "type": "text",
+      "label": "Watermark text",
+      "default": "CONFIDENTIAL",
+      "placeholder": "CONFIDENTIAL",
+      "help": "Latin letters, digits and common punctuation only."
+    },
+    "wmOpacity": {
+      "type": "range",
+      "label": "Opacity (%)",
+      "min": 5,
+      "max": 100,
+      "step": 5,
+      "default": 30
+    },
+    "wmPosition": {
+      "type": "select",
+      "label": "Position",
+      "default": "diagonal",
+      "choices": [
+        {
+          "value": "diagonal",
+          "label": "Diagonal across the page"
+        },
+        {
+          "value": "center",
+          "label": "Centre"
+        },
+        {
+          "value": "top",
+          "label": "Top"
+        },
+        {
+          "value": "bottom",
+          "label": "Bottom"
+        }
+      ]
+    },
+    "wmSize": {
+      "type": "select",
+      "label": "Size",
+      "default": "medium",
+      "choices": [
+        {
+          "value": "small",
+          "label": "Small"
+        },
+        {
+          "value": "medium",
+          "label": "Medium"
+        },
+        {
+          "value": "large",
+          "label": "Large"
+        }
+      ]
+    },
+    "wmColor": {
+      "type": "color",
+      "label": "Colour",
+      "default": "#808080"
+    },
+    "compressLevel": {
+      "type": "select",
+      "label": "Compression",
+      "default": "recommended",
+      "choices": [
+        {
+          "value": "low",
+          "label": "Low (best quality)"
+        },
+        {
+          "value": "recommended",
+          "label": "Recommended"
+        },
+        {
+          "value": "strong",
+          "label": "Strong (smallest file)"
+        }
+      ],
+      "help": "Images inside the PDF are re-compressed; text and vector graphics are left untouched."
+    },
+    "ocrLang": {
+      "type": "select",
+      "label": "Language",
+      "default": "eng",
+      "choices": [
+        {
+          "value": "eng",
+          "label": "English"
+        },
+        {
+          "value": "deu",
+          "label": "German"
+        },
+        {
+          "value": "fra",
+          "label": "French"
+        },
+        {
+          "value": "spa",
+          "label": "Spanish"
+        },
+        {
+          "value": "ita",
+          "label": "Italian"
+        },
+        {
+          "value": "por",
+          "label": "Portuguese"
+        },
+        {
+          "value": "nld",
+          "label": "Dutch"
+        }
+      ],
+      "help": "Only languages installed on the server are offered."
+    },
+    "ocrDpi": {
+      "type": "select",
+      "label": "Scan resolution",
+      "default": "200",
+      "choices": [
+        {
+          "value": "150",
+          "label": "150 DPI (fast)"
+        },
+        {
+          "value": "200",
+          "label": "200 DPI"
+        },
+        {
+          "value": "300",
+          "label": "300 DPI (best for small print)"
+        }
+      ],
+      "help": "Applies to PDFs. Higher is slower and more accurate on small text."
+    }
+  },
+  "tools": [
+    {
+      "id": "image-raster",
+      "name": "Image converter",
+      "category": "image",
+      "mode": "browser",
+      "engine": "Browser Canvas API",
+      "handler": "image.canvas",
+      "inputs": [
+        "png",
+        "jpeg",
+        "webp",
+        "gif",
+        "bmp"
+      ],
+      "targets": [
+        {
+          "id": "png",
+          "format": "png",
+          "label": "PNG",
+          "lossy": false,
+          "options": [
+            "maxWidth",
+            "maxHeight",
+            "rotate",
+            "grayscale"
+          ]
+        },
+        {
+          "id": "jpeg",
+          "format": "jpeg",
+          "label": "JPEG",
+          "lossy": true,
+          "options": [
+            "quality",
+            "background",
+            "maxWidth",
+            "maxHeight",
+            "rotate",
+            "grayscale"
+          ]
+        },
+        {
+          "id": "webp",
+          "format": "webp",
+          "label": "WebP",
+          "lossy": true,
+          "options": [
+            "quality",
+            "maxWidth",
+            "maxHeight",
+            "rotate",
+            "grayscale"
+          ]
+        }
+      ],
+      "allowSameFormat": true,
+      "maxFileMB": 50,
+      "serverCapability": null,
+      "notes": [
+        "Same-format conversion re-encodes the image, which is how you compress, resize or rotate without changing format.",
+        "JPEG removes transparency (filled with the chosen background). Animated GIFs are converted using their first frame.",
+        "Metadata such as EXIF is not preserved.",
+        "Browser support for decoding BMP/GIF/WebP is required; encoding WebP is not supported by every browser (the app tells you if yours cannot)."
+      ],
+      "tests": [
+        "src/lib/convert/image.test.ts",
+        "e2e/convert.spec.ts"
+      ]
+    },
+    {
+      "id": "image-to-pdf",
+      "name": "Image to PDF",
+      "category": "pdf",
+      "mode": "browser",
+      "engine": "pdf-lib",
+      "handler": "pdf.fromImage",
+      "inputs": [
+        "png",
+        "jpeg",
+        "webp",
+        "gif",
+        "bmp"
+      ],
+      "targets": [
+        {
+          "id": "pdf",
+          "format": "pdf",
+          "label": "PDF",
+          "lossy": false,
+          "options": []
+        }
+      ],
+      "allowSameFormat": false,
+      "maxFileMB": 50,
+      "serverCapability": null,
+      "notes": [
+        "Each image becomes its own single-page PDF sized to the image. JPEG data is embedded unchanged; other formats are embedded as PNG.",
+        "Use PDF merge afterwards to combine the results."
+      ],
+      "tests": [
+        "src/lib/convert/pdf.test.ts"
+      ]
+    },
+    {
+      "id": "pdf-merge",
+      "name": "Merge PDFs",
+      "category": "pdf",
+      "mode": "browser",
+      "engine": "pdf-lib",
+      "handler": "pdf.merge",
+      "combine": true,
+      "inputs": [
+        "pdf"
+      ],
+      "targets": [
+        {
+          "id": "merged",
+          "format": "pdf",
+          "label": "One merged PDF",
+          "lossy": false,
+          "options": []
+        }
+      ],
+      "allowSameFormat": true,
+      "maxFileMB": 50,
+      "serverCapability": null,
+      "notes": [
+        "Combines all queued PDFs, in queue order, into one PDF. Needs at least two files.",
+        "Encrypted or corrupted PDFs are rejected with an error."
+      ],
+      "tests": [
+        "src/lib/convert/pdf.test.ts"
+      ]
+    },
+    {
+      "id": "pdf-extract-pages",
+      "name": "Extract PDF pages",
+      "category": "pdf",
+      "mode": "browser",
+      "engine": "pdf-lib",
+      "handler": "pdf.extractPages",
+      "inputs": [
+        "pdf"
+      ],
+      "targets": [
+        {
+          "id": "pages",
+          "format": "pdf",
+          "label": "PDF with selected pages",
+          "lossy": false,
+          "options": [
+            "pages"
+          ]
+        }
+      ],
+      "allowSameFormat": true,
+      "maxFileMB": 50,
+      "serverCapability": null,
+      "notes": [
+        "Keeps only the pages you list, in the order listed (for example 3,1,2). Page numbers start at 1."
+      ],
+      "tests": [
+        "src/lib/convert/pdf.test.ts"
+      ]
+    },
+    {
+      "id": "zip-create",
+      "name": "Create ZIP",
+      "category": "archive",
+      "mode": "browser",
+      "engine": "fflate",
+      "handler": "archive.zipCreate",
+      "combine": true,
+      "inputs": [
+        "*"
+      ],
+      "targets": [
+        {
+          "id": "zip",
+          "format": "zip",
+          "label": "ZIP archive",
+          "lossy": false,
+          "options": []
+        }
+      ],
+      "allowSameFormat": true,
+      "maxFileMB": 100,
+      "serverCapability": null,
+      "notes": [
+        "Packs every queued file into one ZIP. Duplicate names are renamed (name (2).ext)."
+      ],
+      "tests": [
+        "src/lib/convert/archive.test.ts"
+      ]
+    },
+    {
+      "id": "json-tools",
+      "name": "JSON formatter & validator",
+      "category": "data",
+      "mode": "browser",
+      "engine": "Browser JSON parser",
+      "handler": "data.json",
+      "inputs": [
+        "json"
+      ],
+      "targets": [
+        {
+          "id": "pretty",
+          "format": "json",
+          "label": "Pretty-printed JSON",
+          "lossy": false,
+          "options": [
+            "indent"
+          ]
+        },
+        {
+          "id": "minify",
+          "format": "json",
+          "label": "Minified JSON",
+          "lossy": false,
+          "options": []
+        },
+        {
+          "id": "validate",
+          "format": "txt",
+          "label": "Validation report (TXT)",
+          "lossy": false,
+          "options": []
+        }
+      ],
+      "allowSameFormat": true,
+      "maxFileMB": 20,
+      "serverCapability": null,
+      "notes": [
+        "Numbers beyond JavaScript's safe integer range lose precision when re-serialised. Duplicate object keys keep the last value."
+      ],
+      "tests": [
+        "src/lib/convert/data.test.ts"
+      ]
+    },
+    {
+      "id": "csv-to-json",
+      "name": "CSV to JSON",
+      "category": "data",
+      "mode": "browser",
+      "engine": "Built-in CSV parser (RFC 4180)",
+      "handler": "data.csvToJson",
+      "inputs": [
+        "csv"
+      ],
+      "targets": [
+        {
+          "id": "json",
+          "format": "json",
+          "label": "JSON array of objects",
+          "lossy": false,
+          "options": [
+            "delimiter"
+          ]
+        }
+      ],
+      "allowSameFormat": false,
+      "maxFileMB": 20,
+      "serverCapability": null,
+      "notes": [
+        "The first row is used as the header. All values are kept as strings (no type guessing). Rows with a different column count than the header are rejected.",
+        "Duplicate or empty header names are rejected. Blank lines are skipped."
+      ],
+      "tests": [
+        "src/lib/convert/data.test.ts"
+      ]
+    },
+    {
+      "id": "json-to-csv",
+      "name": "JSON to CSV",
+      "category": "data",
+      "mode": "browser",
+      "engine": "Built-in CSV writer",
+      "handler": "data.jsonToCsv",
+      "inputs": [
+        "json"
+      ],
+      "targets": [
+        {
+          "id": "csv",
+          "format": "csv",
+          "label": "CSV",
+          "lossy": false,
+          "options": []
+        }
+      ],
+      "allowSameFormat": false,
+      "maxFileMB": 20,
+      "serverCapability": null,
+      "notes": [
+        "Supported shape: an array of flat objects whose values are strings, numbers, booleans or null. Nested objects or arrays are rejected with the location of the offending value rather than silently dropped."
+      ],
+      "tests": [
+        "src/lib/convert/data.test.ts"
+      ]
+    },
+    {
+      "id": "xml-to-json",
+      "name": "XML to JSON",
+      "category": "data",
+      "mode": "browser",
+      "engine": "Browser DOMParser",
+      "handler": "data.xmlToJson",
+      "inputs": [
+        "xml"
+      ],
+      "targets": [
+        {
+          "id": "json",
+          "format": "json",
+          "label": "JSON",
+          "lossy": false,
+          "options": [
+            "indent"
+          ]
+        }
+      ],
+      "allowSameFormat": false,
+      "maxFileMB": 20,
+      "serverCapability": null,
+      "notes": [
+        "Attributes become \"@name\" keys, text next to elements becomes \"#text\", repeated sibling elements become arrays. All values are strings.",
+        "Comments and processing instructions are dropped. DTDs are not processed."
+      ],
+      "tests": [
+        "src/lib/convert/data.test.ts"
+      ]
+    },
+    {
+      "id": "text-encoding",
+      "name": "Base64 & URL encoding",
+      "category": "developer",
+      "mode": "browser",
+      "engine": "Browser TextEncoder / atob",
+      "handler": "data.encoding",
+      "inputs": [
+        "txt",
+        "json",
+        "csv",
+        "xml",
+        "md",
+        "html"
+      ],
+      "targets": [
+        {
+          "id": "base64-encode",
+          "format": "txt",
+          "label": "Base64 encode (TXT)",
+          "lossy": false,
+          "options": []
+        },
+        {
+          "id": "base64-decode",
+          "format": "txt",
+          "label": "Base64 decode (TXT)",
+          "lossy": false,
+          "options": []
+        },
+        {
+          "id": "url-encode",
+          "format": "txt",
+          "label": "URL encode (TXT)",
+          "lossy": false,
+          "options": []
+        },
+        {
+          "id": "url-decode",
+          "format": "txt",
+          "label": "URL decode (TXT)",
+          "lossy": false,
+          "options": []
+        }
+      ],
+      "allowSameFormat": true,
+      "maxFileMB": 10,
+      "serverCapability": null,
+      "notes": [
+        "Text files only (UTF-8). Base64 decode rejects input that is not valid Base64 or does not decode to UTF-8 text."
+      ],
+      "tests": [
+        "src/lib/convert/data.test.ts"
+      ]
+    },
+    {
+      "id": "image-server",
+      "name": "Image converter (server)",
+      "category": "image",
+      "mode": "server",
+      "engine": "Pillow",
+      "handler": "image.pillow",
+      "inputs": [
+        "png",
+        "jpeg",
+        "webp",
+        "gif",
+        "bmp",
+        "tiff",
+        "ico"
+      ],
+      "targets": [
+        {
+          "id": "png",
+          "format": "png",
+          "label": "PNG",
+          "lossy": false,
+          "options": []
+        },
+        {
+          "id": "jpeg",
+          "format": "jpeg",
+          "label": "JPEG",
+          "lossy": true,
+          "options": [
+            "quality",
+            "background"
+          ]
+        },
+        {
+          "id": "webp",
+          "format": "webp",
+          "label": "WebP",
+          "lossy": true,
+          "options": [
+            "quality"
+          ]
+        },
+        {
+          "id": "gif",
+          "format": "gif",
+          "label": "GIF",
+          "lossy": true,
+          "options": []
+        },
+        {
+          "id": "bmp",
+          "format": "bmp",
+          "label": "BMP",
+          "lossy": false,
+          "options": [
+            "background"
+          ]
+        },
+        {
+          "id": "tiff",
+          "format": "tiff",
+          "label": "TIFF",
+          "lossy": false,
+          "options": []
+        },
+        {
+          "id": "ico",
+          "format": "ico",
+          "label": "ICO",
+          "lossy": false,
+          "options": []
+        }
+      ],
+      "allowSameFormat": false,
+      "maxFileMB": 20,
+      "serverCapability": "pillow",
+      "notes": [
+        "Only used when the browser tool cannot handle the pair (TIFF/ICO/GIF/BMP output, TIFF/ICO input).",
+        "GIF output is limited to 256 colours and uses the first frame. ICO output is limited to 256×256 (larger images are scaled down). Only the first frame/page of multi-page files is converted."
+      ],
+      "tests": [
+        "backend/tests/test_matrix.py",
+        "backend/tests/test_edge_cases.py"
+      ]
+    },
+    {
+      "id": "office-to-pdf",
+      "name": "Office document to PDF",
+      "category": "document",
+      "mode": "server",
+      "engine": "LibreOffice (headless)",
+      "handler": "document.libreoffice",
+      "inputs": [
+        "docx",
+        "odt",
+        "rtf",
+        "xlsx",
+        "ods",
+        "pptx",
+        "odp"
+      ],
+      "targets": [
+        {
+          "id": "pdf",
+          "format": "pdf",
+          "label": "PDF",
+          "lossy": false,
+          "options": []
+        }
+      ],
+      "allowSameFormat": false,
+      "maxFileMB": 20,
+      "serverCapability": "libreoffice",
+      "notes": [
+        "Layout fidelity depends on LibreOffice's rendering: fonts missing on the server are substituted, and complex Word features (some macros, SmartArt, tracked-change views) may render differently.",
+        "Macros are never executed. Conversions are slow on first use (LibreOffice start-up)."
+      ],
+      "tests": [
+        "backend/tests/test_matrix.py",
+        "backend/tests/test_edge_cases.py"
+      ]
+    },
+    {
+      "id": "text-documents",
+      "name": "Text document converter",
+      "category": "document",
+      "mode": "server",
+      "engine": "Pandoc",
+      "handler": "document.pandoc",
+      "inputs": [
+        "md",
+        "html",
+        "docx",
+        "odt"
+      ],
+      "targets": [
+        {
+          "id": "html",
+          "format": "html",
+          "label": "HTML",
+          "lossy": false,
+          "from": [
+            "md",
+            "docx",
+            "odt"
+          ],
+          "options": []
+        },
+        {
+          "id": "docx",
+          "format": "docx",
+          "label": "DOCX",
+          "lossy": true,
+          "from": [
+            "md",
+            "html"
+          ],
+          "options": []
+        },
+        {
+          "id": "md",
+          "format": "md",
+          "label": "Markdown",
+          "lossy": true,
+          "from": [
+            "html",
+            "docx",
+            "odt"
+          ],
+          "options": []
+        },
+        {
+          "id": "txt",
+          "format": "txt",
+          "label": "Plain text",
+          "lossy": true,
+          "from": [
+            "md",
+            "html",
+            "docx",
+            "odt"
+          ],
+          "options": []
+        }
+      ],
+      "allowSameFormat": false,
+      "maxFileMB": 20,
+      "serverCapability": "pandoc",
+      "notes": [
+        "Pandoc converts structure, not page layout: styling, headers/footers and complex tables can be simplified. Images embedded in DOCX/ODT are dropped from TXT/Markdown output.",
+        "Pandoc runs in sandbox mode: it cannot read other files or fetch remote resources, so remote images in HTML are not embedded."
+      ],
+      "tests": [
+        "backend/tests/test_matrix.py",
+        "backend/tests/test_edge_cases.py"
+      ]
+    },
+    {
+      "id": "pdf-server",
+      "name": "PDF text & page images",
+      "category": "pdf",
+      "mode": "server",
+      "engine": "pdfplumber / pypdfium2",
+      "handler": "pdf.server",
+      "inputs": [
+        "pdf"
+      ],
+      "targets": [
+        {
+          "id": "txt",
+          "format": "txt",
+          "label": "Extracted text (TXT)",
+          "lossy": true,
+          "options": []
+        },
+        {
+          "id": "png-zip",
+          "format": "zip",
+          "label": "Page images (PNG in a ZIP)",
+          "lossy": false,
+          "options": [
+            "dpi"
+          ]
+        }
+      ],
+      "allowSameFormat": false,
+      "maxFileMB": 20,
+      "serverCapability": "pdf",
+      "notes": [
+        "Text extraction only works for PDFs with a text layer; for scans use the OCR tool. Reading order can differ from the visual layout.",
+        "Page rendering is limited to the first 50 pages. Encrypted PDFs are rejected.",
+        "For an editable Word file use PDF to Word."
+      ],
+      "tests": [
+        "backend/tests/test_matrix.py",
+        "backend/tests/test_edge_cases.py"
+      ]
+    },
+    {
+      "id": "audio-convert",
+      "name": "Audio converter",
+      "category": "audio",
+      "mode": "server",
+      "engine": "FFmpeg",
+      "handler": "media.audio",
+      "inputs": [
+        "mp3",
+        "wav",
+        "flac",
+        "ogg",
+        "m4a"
+      ],
+      "targets": [
+        {
+          "id": "mp3",
+          "format": "mp3",
+          "label": "MP3",
+          "lossy": true,
+          "options": [
+            "audioBitrate"
+          ]
+        },
+        {
+          "id": "wav",
+          "format": "wav",
+          "label": "WAV",
+          "lossy": false,
+          "options": []
+        },
+        {
+          "id": "flac",
+          "format": "flac",
+          "label": "FLAC",
+          "lossy": false,
+          "options": []
+        },
+        {
+          "id": "ogg",
+          "format": "ogg",
+          "label": "OGG (Vorbis)",
+          "lossy": true,
+          "options": [
+            "audioBitrate"
+          ]
+        },
+        {
+          "id": "m4a",
+          "format": "m4a",
+          "label": "M4A (AAC)",
+          "lossy": true,
+          "options": [
+            "audioBitrate"
+          ]
+        }
+      ],
+      "allowSameFormat": false,
+      "maxFileMB": 20,
+      "serverCapability": "ffmpeg",
+      "notes": [
+        "Converting from a lossy format (MP3, OGG, M4A) to a lossless one does not restore quality. Metadata/cover art are not guaranteed to be preserved.",
+        "Conversion time is capped; very long files may be rejected."
+      ],
+      "tests": [
+        "backend/tests/test_matrix.py",
+        "backend/tests/test_edge_cases.py"
+      ]
+    },
+    {
+      "id": "video-convert",
+      "name": "Video converter",
+      "category": "video",
+      "mode": "server",
+      "engine": "FFmpeg",
+      "handler": "media.video",
+      "inputs": [
+        "mp4",
+        "webm",
+        "mkv",
+        "mov"
+      ],
+      "targets": [
+        {
+          "id": "mp4",
+          "format": "mp4",
+          "label": "MP4 (H.264 + AAC)",
+          "lossy": true,
+          "from": [
+            "webm",
+            "mkv",
+            "mov"
+          ],
+          "options": []
+        },
+        {
+          "id": "webm",
+          "format": "webm",
+          "label": "WebM (VP9 + Opus)",
+          "lossy": true,
+          "from": [
+            "mp4",
+            "mkv",
+            "mov"
+          ],
+          "options": []
+        },
+        {
+          "id": "gif",
+          "format": "gif",
+          "label": "Animated GIF (first 15 s)",
+          "lossy": true,
+          "options": [
+            "gifWidth",
+            "gifFps"
+          ]
+        },
+        {
+          "id": "mp3",
+          "format": "mp3",
+          "label": "Audio only (MP3)",
+          "lossy": true,
+          "options": [
+            "audioBitrate"
+          ]
+        }
+      ],
+      "allowSameFormat": false,
+      "maxFileMB": 20,
+      "serverCapability": "ffmpeg",
+      "notes": [
+        "Video is re-encoded, so quality is reduced and conversion is CPU-intensive; each request has a strict time limit and may be rejected for long or high-resolution input.",
+        "Only the first video and audio stream are kept; subtitles and extra tracks are dropped."
+      ],
+      "tests": [
+        "backend/tests/test_matrix.py",
+        "backend/tests/test_edge_cases.py"
+      ]
+    },
+    {
+      "id": "archive-repack",
+      "name": "ZIP / TAR.GZ re-packer",
+      "category": "archive",
+      "mode": "server",
+      "engine": "Python zipfile / tarfile",
+      "handler": "archive.repack",
+      "inputs": [
+        "zip",
+        "targz"
+      ],
+      "targets": [
+        {
+          "id": "targz",
+          "format": "targz",
+          "label": "TAR.GZ",
+          "lossy": false,
+          "from": [
+            "zip"
+          ],
+          "options": []
+        },
+        {
+          "id": "zip",
+          "format": "zip",
+          "label": "ZIP",
+          "lossy": false,
+          "from": [
+            "targz"
+          ],
+          "options": []
+        }
+      ],
+      "allowSameFormat": false,
+      "maxFileMB": 20,
+      "serverCapability": "archive",
+      "notes": [
+        "Archives are inspected before extraction: entry count, total expanded size and path safety are checked, and unsafe archives (path traversal, absolute paths, links, bombs) are rejected.",
+        "Symbolic/hard links and device files are rejected. File permissions and timestamps may not be preserved."
+      ],
+      "tests": [
+        "backend/tests/test_matrix.py",
+        "backend/tests/test_edge_cases.py"
+      ]
+    },
+    {
+      "id": "pdf-rotate",
+      "name": "Rotate PDF pages",
+      "category": "pdf",
+      "mode": "browser",
+      "engine": "pdf-lib",
+      "handler": "pdf.rotate",
+      "inputs": [
+        "pdf"
+      ],
+      "targets": [
+        {
+          "id": "rotated",
+          "format": "pdf",
+          "label": "Rotated PDF",
+          "lossy": false,
+          "options": [
+            "rotateAngle",
+            "rotatePages"
+          ]
+        }
+      ],
+      "allowSameFormat": true,
+      "maxFileMB": 50,
+      "serverCapability": null,
+      "notes": [
+        "Rotates all pages or the pages you list, clockwise. Text and images are not re-encoded; only the page rotation flag changes.",
+        "Encrypted or corrupted PDFs are rejected."
+      ],
+      "tests": [
+        "src/lib/convert/pdf.test.ts"
+      ]
+    },
+    {
+      "id": "pdf-split",
+      "name": "Split PDF",
+      "category": "pdf",
+      "mode": "browser",
+      "engine": "pdf-lib",
+      "handler": "pdf.split",
+      "inputs": [
+        "pdf"
+      ],
+      "targets": [
+        {
+          "id": "split-zip",
+          "format": "zip",
+          "label": "PDFs in a ZIP",
+          "lossy": false,
+          "options": [
+            "splitMode",
+            "splitChunk",
+            "splitRanges"
+          ]
+        }
+      ],
+      "allowSameFormat": true,
+      "maxFileMB": 50,
+      "serverCapability": null,
+      "notes": [
+        "Splits one PDF into several: every page, every N pages, or custom ranges such as 1-3;4-6;7-. Results are delivered in a ZIP.",
+        "At most 500 output files. Form fields, bookmarks and links that point to other pages are not preserved in the pieces."
+      ],
+      "tests": [
+        "src/lib/convert/pdf.test.ts"
+      ]
+    },
+    {
+      "id": "pdf-watermark",
+      "name": "Watermark PDF",
+      "category": "pdf",
+      "mode": "browser",
+      "engine": "pdf-lib",
+      "handler": "pdf.watermark",
+      "inputs": [
+        "pdf"
+      ],
+      "targets": [
+        {
+          "id": "watermarked",
+          "format": "pdf",
+          "label": "Watermarked PDF",
+          "lossy": false,
+          "options": [
+            "wmText",
+            "wmOpacity",
+            "wmPosition",
+            "wmSize",
+            "wmColor"
+          ]
+        }
+      ],
+      "allowSameFormat": true,
+      "maxFileMB": 50,
+      "serverCapability": null,
+      "notes": [
+        "Stamps text on every page. Text-only (no image watermarks); limited to the characters of the built-in Helvetica font (Latin letters, digits, common punctuation).",
+        "The stamp is drawn on top of the page content and is not removable by the page viewer, but anyone with a PDF editor can delete it: it is not a security feature."
+      ],
+      "tests": [
+        "src/lib/convert/pdf.test.ts"
+      ]
+    },
+    {
+      "id": "pdf-compress",
+      "name": "Compress PDF",
+      "category": "pdf",
+      "mode": "server",
+      "engine": "pypdf / Pillow",
+      "handler": "pdf.compress",
+      "inputs": [
+        "pdf"
+      ],
+      "targets": [
+        {
+          "id": "compressed",
+          "format": "pdf",
+          "label": "Smaller PDF",
+          "lossy": true,
+          "options": [
+            "compressLevel"
+          ]
+        }
+      ],
+      "allowSameFormat": true,
+      "maxFileMB": 20,
+      "serverCapability": "pdf",
+      "notes": [
+        "Re-encodes the images inside the PDF as JPEG (at the chosen quality, down-scaling very large ones) and compresses page content. Text, fonts and vector graphics are unchanged.",
+        "Savings come almost entirely from images: a text-only PDF usually shrinks very little, and if no smaller file can be made the tool says so instead of returning the original.",
+        "Images with transparency are left as they are. Encrypted PDFs are rejected. Not a replacement for Ghostscript-style optimisation of every PDF feature."
+      ],
+      "tests": [
+        "backend/tests/test_new_tools.py"
+      ]
+    },
+    {
+      "id": "pdf-to-word",
+      "name": "PDF to Word",
+      "category": "pdf",
+      "mode": "server",
+      "engine": "LibreOffice (PDF import)",
+      "handler": "document.pdf2docx",
+      "inputs": [
+        "pdf"
+      ],
+      "targets": [
+        {
+          "id": "pdf-docx",
+          "format": "docx",
+          "label": "Word document (DOCX)",
+          "lossy": true,
+          "options": []
+        }
+      ],
+      "allowSameFormat": false,
+      "maxFileMB": 20,
+      "serverCapability": "libreoffice",
+      "notes": [
+        "Text stays real, selectable and editable text, and the page look is kept, but LibreOffice places it in positioned text boxes line by line rather than rebuilding flowing paragraphs, so editing a whole paragraph takes manual effort.",
+        "Tables become lines of positioned text, not Word tables. Complex layouts, unusual fonts and multi-column pages can shift.",
+        "PDFs without a text layer (scans) are rejected with a pointer to OCR. Limited to 50 pages; encrypted PDFs are rejected."
+      ],
+      "tests": [
+        "backend/tests/test_new_tools.py"
+      ]
+    },
+    {
+      "id": "ocr",
+      "name": "OCR (scans to searchable PDF or text)",
+      "category": "pdf",
+      "mode": "server",
+      "engine": "Tesseract (+ pypdfium2)",
+      "handler": "ocr.tesseract",
+      "inputs": [
+        "pdf",
+        "png",
+        "jpeg",
+        "tiff",
+        "bmp",
+        "webp"
+      ],
+      "targets": [
+        {
+          "id": "searchable-pdf",
+          "format": "pdf",
+          "label": "Searchable PDF",
+          "lossy": true,
+          "options": [
+            "ocrLang",
+            "ocrDpi"
+          ]
+        },
+        {
+          "id": "ocr-txt",
+          "format": "txt",
+          "label": "Recognised text (TXT)",
+          "lossy": true,
+          "options": [
+            "ocrLang",
+            "ocrDpi"
+          ]
+        }
+      ],
+      "allowSameFormat": true,
+      "maxFileMB": 20,
+      "serverCapability": "tesseract",
+      "notes": [
+        "Recognises text in scanned PDFs and in images. The searchable PDF contains each page as a picture with an invisible text layer, so it can be searched and copied from; the original vector text and fonts of a PDF are not preserved.",
+        "Accuracy depends on scan quality; handwriting, very small print and complex layouts are poor. Only languages installed on the server are offered (English by default).",
+        "Limited to 20 pages per file (IHATEFILE_MAX_OCR_PAGES) because recognition is slow on small free servers."
+      ],
+      "tests": [
+        "backend/tests/test_new_tools.py"
+      ]
+    },
+    {
+      "id": "html-to-pdf",
+      "name": "HTML to PDF",
+      "category": "document",
+      "mode": "server",
+      "engine": "LibreOffice (Writer/Web)",
+      "handler": "document.html2pdf",
+      "inputs": [
+        "html"
+      ],
+      "targets": [
+        {
+          "id": "html-pdf",
+          "format": "pdf",
+          "label": "PDF",
+          "lossy": true,
+          "options": []
+        }
+      ],
+      "allowSameFormat": false,
+      "maxFileMB": 5,
+      "serverCapability": "libreoffice",
+      "notes": [
+        "The HTML is sanitised first: scripts, frames, forms, external stylesheets, remote and local images and CSS that loads anything are removed, so the converter never fetches a URL or reads a file. Only images embedded as data: URIs (PNG, JPEG, GIF) are kept.",
+        "Rendering is by LibreOffice Writer, not a web browser: no JavaScript, and modern CSS (flexbox, grid, variables, web fonts) is ignored. Simple documents, articles and tables work best.",
+        "This converts an uploaded HTML file, not a live web page address."
+      ],
+      "tests": [
+        "backend/tests/test_new_tools.py"
+      ]
+    }
+  ],
+  "popular": [
+    {
+      "slug": "merge-pdf"
+    },
+    {
+      "slug": "word-to-pdf"
+    },
+    {
+      "slug": "compress-pdf"
+    },
+    {
+      "slug": "pdf-to-word"
+    },
+    {
+      "slug": "image-to-pdf"
+    },
+    {
+      "slug": "png-to-jpg"
+    },
+    {
+      "slug": "compress-image"
+    },
+    {
+      "slug": "video-to-gif"
+    },
+    {
+      "slug": "wav-to-mp3"
+    },
+    {
+      "slug": "csv-to-json"
+    }
+  ],
+  "tasks": [
+    {
+      "slug": "merge-pdf",
+      "title": "Merge PDF",
+      "description": "Combine several PDFs into one, in the order you choose.",
+      "category": "pdf",
+      "icon": "merge",
+      "tool": "pdf-merge",
+      "target": "merged"
+    },
+    {
+      "slug": "extract-pdf-pages",
+      "title": "Extract PDF pages",
+      "description": "Keep only the pages you list, such as 1-3,5, in any order.",
+      "category": "pdf",
+      "icon": "scissors",
+      "tool": "pdf-extract-pages",
+      "target": "pages"
+    },
+    {
+      "slug": "image-to-pdf",
+      "title": "Image to PDF",
+      "description": "Turn JPG, PNG, WebP, GIF or BMP images into PDF files.",
+      "category": "pdf",
+      "icon": "image",
+      "tool": "image-to-pdf",
+      "target": "pdf"
+    },
+    {
+      "slug": "pdf-to-images",
+      "title": "PDF to images",
+      "description": "Render every page of a PDF as a PNG image (ZIP).",
+      "category": "pdf",
+      "icon": "image",
+      "tool": "pdf-server",
+      "target": "png-zip"
+    },
+    {
+      "slug": "pdf-to-text",
+      "title": "PDF to text",
+      "description": "Extract the text layer of a PDF into a TXT file.",
+      "category": "pdf",
+      "icon": "file-text",
+      "tool": "pdf-server",
+      "target": "txt"
+    },
+    {
+      "slug": "word-to-pdf",
+      "title": "Word to PDF",
+      "description": "Convert DOCX, ODT or RTF documents to PDF.",
+      "category": "document",
+      "icon": "file-text",
+      "tool": "office-to-pdf",
+      "target": "pdf",
+      "from": [
+        "docx",
+        "odt",
+        "rtf"
+      ]
+    },
+    {
+      "slug": "excel-to-pdf",
+      "title": "Excel to PDF",
+      "description": "Convert XLSX or ODS spreadsheets to PDF.",
+      "category": "document",
+      "icon": "table",
+      "tool": "office-to-pdf",
+      "target": "pdf",
+      "from": [
+        "xlsx",
+        "ods"
+      ]
+    },
+    {
+      "slug": "powerpoint-to-pdf",
+      "title": "PowerPoint to PDF",
+      "description": "Convert PPTX or ODP presentations to PDF.",
+      "category": "document",
+      "icon": "presentation",
+      "tool": "office-to-pdf",
+      "target": "pdf",
+      "from": [
+        "pptx",
+        "odp"
+      ]
+    },
+    {
+      "slug": "markdown-to-html",
+      "title": "Markdown to HTML",
+      "description": "Convert Markdown documents to HTML.",
+      "category": "document",
+      "icon": "code",
+      "tool": "text-documents",
+      "target": "html",
+      "from": [
+        "md"
+      ]
+    },
+    {
+      "slug": "word-to-text",
+      "title": "Word to text",
+      "description": "Extract plain text from DOCX or ODT files.",
+      "category": "document",
+      "icon": "file-text",
+      "tool": "text-documents",
+      "target": "txt",
+      "from": [
+        "docx",
+        "odt"
+      ]
+    },
+    {
+      "slug": "png-to-jpg",
+      "title": "PNG to JPG",
+      "description": "Convert PNG images to JPEG with adjustable quality.",
+      "category": "image",
+      "icon": "image",
+      "tool": "image-raster",
+      "target": "jpeg",
+      "from": [
+        "png"
+      ]
+    },
+    {
+      "slug": "jpg-to-png",
+      "title": "JPG to PNG",
+      "description": "Convert JPEG images to lossless PNG.",
+      "category": "image",
+      "icon": "image",
+      "tool": "image-raster",
+      "target": "png",
+      "from": [
+        "jpeg"
+      ]
+    },
+    {
+      "slug": "convert-to-webp",
+      "title": "Convert to WebP",
+      "description": "Convert PNG, JPEG or GIF images to smaller WebP files.",
+      "category": "image",
+      "icon": "image",
+      "tool": "image-raster",
+      "target": "webp",
+      "from": [
+        "png",
+        "jpeg",
+        "gif",
+        "bmp"
+      ]
+    },
+    {
+      "slug": "compress-image",
+      "title": "Compress & resize image",
+      "description": "Re-encode JPEG or WebP at lower quality, or scale images down.",
+      "category": "image",
+      "icon": "minimize",
+      "tool": "image-raster",
+      "target": "jpeg",
+      "from": [
+        "png",
+        "jpeg",
+        "webp",
+        "gif",
+        "bmp"
+      ]
+    },
+    {
+      "slug": "image-to-ico",
+      "title": "Image to ICO",
+      "description": "Create .ico icons from PNG, JPEG or WebP images.",
+      "category": "image",
+      "icon": "image",
+      "tool": "image-server",
+      "target": "ico",
+      "from": [
+        "png",
+        "jpeg",
+        "webp",
+        "gif",
+        "bmp"
+      ]
+    },
+    {
+      "slug": "wav-to-mp3",
+      "title": "Audio to MP3",
+      "description": "Convert WAV, FLAC, OGG or M4A audio to MP3.",
+      "category": "audio",
+      "icon": "music",
+      "tool": "audio-convert",
+      "target": "mp3",
+      "from": [
+        "wav",
+        "flac",
+        "ogg",
+        "m4a"
+      ]
+    },
+    {
+      "slug": "audio-to-wav",
+      "title": "Audio to WAV",
+      "description": "Convert MP3, FLAC, OGG or M4A audio to WAV.",
+      "category": "audio",
+      "icon": "music",
+      "tool": "audio-convert",
+      "target": "wav",
+      "from": [
+        "mp3",
+        "flac",
+        "ogg",
+        "m4a"
+      ]
+    },
+    {
+      "slug": "video-to-mp4",
+      "title": "Video to MP4",
+      "description": "Convert WebM, MKV or MOV video to MP4 (H.264).",
+      "category": "video",
+      "icon": "video",
+      "tool": "video-convert",
+      "target": "mp4",
+      "from": [
+        "webm",
+        "mkv",
+        "mov"
+      ]
+    },
+    {
+      "slug": "video-to-gif",
+      "title": "Video to GIF",
+      "description": "Make an animated GIF from the first 15 seconds of a video.",
+      "category": "video",
+      "icon": "video",
+      "tool": "video-convert",
+      "target": "gif"
+    },
+    {
+      "slug": "video-to-mp3",
+      "title": "Video to MP3",
+      "description": "Extract the audio track of a video as MP3.",
+      "category": "video",
+      "icon": "music",
+      "tool": "video-convert",
+      "target": "mp3"
+    },
+    {
+      "slug": "create-zip",
+      "title": "Create ZIP",
+      "description": "Pack any files into one ZIP archive, in your browser.",
+      "category": "archive",
+      "icon": "archive",
+      "tool": "zip-create",
+      "target": "zip"
+    },
+    {
+      "slug": "zip-to-targz",
+      "title": "ZIP to TAR.GZ",
+      "description": "Re-pack a ZIP archive as TAR.GZ, with safety checks.",
+      "category": "archive",
+      "icon": "archive",
+      "tool": "archive-repack",
+      "target": "targz",
+      "from": [
+        "zip"
+      ]
+    },
+    {
+      "slug": "json-formatter",
+      "title": "JSON formatter",
+      "description": "Pretty-print, minify or validate JSON files.",
+      "category": "data",
+      "icon": "braces",
+      "tool": "json-tools",
+      "target": "pretty"
+    },
+    {
+      "slug": "csv-to-json",
+      "title": "CSV to JSON",
+      "description": "Convert CSV files to a JSON array of objects.",
+      "category": "data",
+      "icon": "braces",
+      "tool": "csv-to-json",
+      "target": "json"
+    },
+    {
+      "slug": "json-to-csv",
+      "title": "JSON to CSV",
+      "description": "Convert an array of flat JSON objects to CSV.",
+      "category": "data",
+      "icon": "braces",
+      "tool": "json-to-csv",
+      "target": "csv"
+    },
+    {
+      "slug": "xml-to-json",
+      "title": "XML to JSON",
+      "description": "Convert XML documents to JSON.",
+      "category": "data",
+      "icon": "braces",
+      "tool": "xml-to-json",
+      "target": "json"
+    },
+    {
+      "slug": "base64",
+      "title": "Base64 & URL encoding",
+      "description": "Encode or decode text files as Base64 or percent-encoding.",
+      "category": "developer",
+      "icon": "terminal",
+      "tool": "text-encoding",
+      "target": "base64-encode"
+    },
+    {
+      "slug": "rotate-pdf",
+      "title": "Rotate PDF",
+      "description": "Turn all pages, or only the ones you pick, by 90, 180 or 270 degrees.",
+      "category": "pdf",
+      "icon": "rotate",
+      "tool": "pdf-rotate",
+      "target": "rotated"
+    },
+    {
+      "slug": "split-pdf",
+      "title": "Split PDF",
+      "description": "Cut one PDF into several: every page, every N pages, or your own ranges.",
+      "category": "pdf",
+      "icon": "split",
+      "tool": "pdf-split",
+      "target": "split-zip"
+    },
+    {
+      "slug": "watermark-pdf",
+      "title": "Watermark PDF",
+      "description": "Stamp text such as DRAFT or CONFIDENTIAL on every page.",
+      "category": "pdf",
+      "icon": "stamp",
+      "tool": "pdf-watermark",
+      "target": "watermarked"
+    },
+    {
+      "slug": "compress-pdf",
+      "title": "Compress PDF",
+      "description": "Make image-heavy PDFs smaller by re-compressing the pictures inside.",
+      "category": "pdf",
+      "icon": "minimize",
+      "tool": "pdf-compress",
+      "target": "compressed"
+    },
+    {
+      "slug": "pdf-to-word",
+      "title": "PDF to Word",
+      "description": "Turn a text PDF into an editable Word document.",
+      "category": "pdf",
+      "icon": "file-text",
+      "tool": "pdf-to-word",
+      "target": "pdf-docx"
+    },
+    {
+      "slug": "ocr-pdf",
+      "title": "OCR: scan to searchable PDF",
+      "description": "Make scanned PDFs and photos of pages searchable and copyable.",
+      "category": "pdf",
+      "icon": "scan",
+      "tool": "ocr",
+      "target": "searchable-pdf",
+      "from": [
+        "pdf",
+        "png",
+        "jpeg",
+        "tiff",
+        "bmp",
+        "webp"
+      ]
+    },
+    {
+      "slug": "scan-to-text",
+      "title": "Scan to text (OCR)",
+      "description": "Read the text out of a scanned PDF or an image.",
+      "category": "pdf",
+      "icon": "scan",
+      "tool": "ocr",
+      "target": "ocr-txt",
+      "from": [
+        "pdf",
+        "png",
+        "jpeg",
+        "tiff",
+        "bmp",
+        "webp"
+      ]
+    },
+    {
+      "slug": "html-to-pdf",
+      "title": "HTML to PDF",
+      "description": "Turn an HTML file into a PDF. Simple pages only; no JavaScript.",
+      "category": "document",
+      "icon": "code",
+      "tool": "html-to-pdf",
+      "target": "html-pdf"
+    }
+  ]
+}

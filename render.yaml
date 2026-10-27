@@ -1,0 +1,16 @@
+# Render Blueprint for the API only (the frontend is a static site elsewhere). See docs/DEPLOYMENT.md.
+services:
+  - type: web
+    name: ihatefile-api
+    runtime: docker
+    dockerfilePath: ./backend/Dockerfile
+    dockerContext: .
+    plan: free
+    healthCheckPath: /api/v1/health
+    envVars:
+      - key: IHATEFILE_CORS_ORIGINS
+        sync: false   # set to your frontend origin in the dashboard
+      - key: IHATEFILE_TRUST_PROXY_HEADERS
+        value: "true"
+      - key: IHATEFILE_TRUSTED_PROXY_HOPS   # number of proxies that append to X-Forwarded-For in front of the app
+        value: "1"

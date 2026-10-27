@@ -1,0 +1,26 @@
+# Deploys the static frontend to GitHub Pages. Set repository variables:
+#   VITE_API_BASE_URL  (your API origin, optional)   VITE_BASE  (e.g. /ihatefile/ for project sites)
+name: Deploy frontend to GitHub Pages
+on:
+  workflow_dispatch:
+permissions: { contents: read, pages: write, id-token: write }
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment: { name: github-pages, url: "${{ steps.deployment.outputs.page_url }}" }
+    steps:
+      - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v4
+        with: { version: 10 }
+      - uses: actions/setup-node@v4
+        with: { node-version: 22, cache: pnpm }
+      - run: pnpm install --frozen-lockfile
+      - run: pnpm build
+        env:
+          VITE_API_BASE_URL: ${{ vars.VITE_API_BASE_URL }}
+          VITE_BASE: ${{ vars.VITE_BASE || '/' }}
+      - run: cp dist/index.html dist/404.html   # SPA fallback for GitHub Pages
+      - uses: actions/upload-pages-artifact@v3
+        with: { path: dist }
+      - id: deployment
+        uses: actions/deploy-pages@v4

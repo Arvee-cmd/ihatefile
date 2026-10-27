@@ -1,0 +1,10 @@
+# Lower bounds are the versions the test-suite was run against (pip-audit clean at that time); older releases
+# have published security advisories. Re-run `pip-audit -r backend/requirements.txt` before each deployment.
+fastapi>=0.156
+uvicorn[standard]>=0.54
+python-multipart>=0.0.32
+pillow>=13.0
+pypdf>=6.21
+pdfplumber>=0.11.10
+lxml>=6.1
+pypdfium2>=5.14
